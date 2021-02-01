@@ -1,0 +1,20 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light01);
+  box-shadow: var(--shadow-dark);
+
+  @include responsive(bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+
+  @include responsive(bp-medium) {
+    flex-direction: column;
+  }
+}
